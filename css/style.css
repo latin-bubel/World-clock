@@ -1,5 +1,5 @@
 body {
-  background-color: #eee0cb;
+  background-color: #eae7e2;
   font-family: sans-serif;
 }
 
@@ -21,6 +21,12 @@ select {
   border-radius: 4px;
   font-size: 18px;
   background: white;
+  box-shadow: none;
+}
+
+a {
+  color: rgb(133, 87, 178);
+  text-decoration: none;
 }
 
 .container {
