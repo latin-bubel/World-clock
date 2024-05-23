@@ -22,7 +22,16 @@ function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = cityTimeZone;
+  citiesElement.innerHTML = `
+  <div class="city">
+    <div>
+      <h2>${cityTimeZone}</h2>
+       <div class="date">${cityTime.format("MMM Do YYYY")} </div>
+       </div>
+         <div>
+           <div class="time">${cityTime.format("h:mm:ss")} </div>
+                </div>
+            </div>`;
 }
 
 updateTime();
